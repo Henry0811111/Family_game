@@ -1,0 +1,16 @@
+C:\Users\battl\OneDrive\School\First_game\FamilyGames.Application\bin\Debug\net10.0\FamilyGames.Application.deps.json
+C:\Users\battl\OneDrive\School\First_game\FamilyGames.Application\bin\Debug\net10.0\FamilyGames.Application.dll
+C:\Users\battl\OneDrive\School\First_game\FamilyGames.Application\bin\Debug\net10.0\FamilyGames.Application.pdb
+C:\Users\battl\OneDrive\School\First_game\FamilyGames.Application\bin\Debug\net10.0\FamilyGames.Domain.dll
+C:\Users\battl\OneDrive\School\First_game\FamilyGames.Application\bin\Debug\net10.0\FamilyGames.Domain.pdb
+C:\Users\battl\OneDrive\School\First_game\FamilyGames.Application\obj\Debug\net10.0\FamilyGames.Application.csproj.AssemblyReference.cache
+C:\Users\battl\OneDrive\School\First_game\FamilyGames.Application\obj\Debug\net10.0\FamilyGames.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\battl\OneDrive\School\First_game\FamilyGames.Application\obj\Debug\net10.0\FamilyGames.Application.AssemblyInfoInputs.cache
+C:\Users\battl\OneDrive\School\First_game\FamilyGames.Application\obj\Debug\net10.0\FamilyGames.Application.AssemblyInfo.cs
+C:\Users\battl\OneDrive\School\First_game\FamilyGames.Application\obj\Debug\net10.0\FamilyGames.Application.csproj.CoreCompileInputs.cache
+C:\Users\battl\OneDrive\School\First_game\FamilyGames.Application\obj\Debug\net10.0\FamilyGames.Application.sourcelink.json
+C:\Users\battl\OneDrive\School\First_game\FamilyGames.Application\obj\Debug\net10.0\FamilyGa.32EDA0AA.Up2Date
+C:\Users\battl\OneDrive\School\First_game\FamilyGames.Application\obj\Debug\net10.0\FamilyGames.Application.dll
+C:\Users\battl\OneDrive\School\First_game\FamilyGames.Application\obj\Debug\net10.0\refint\FamilyGames.Application.dll
+C:\Users\battl\OneDrive\School\First_game\FamilyGames.Application\obj\Debug\net10.0\FamilyGames.Application.pdb
+C:\Users\battl\OneDrive\School\First_game\FamilyGames.Application\obj\Debug\net10.0\ref\FamilyGames.Application.dll

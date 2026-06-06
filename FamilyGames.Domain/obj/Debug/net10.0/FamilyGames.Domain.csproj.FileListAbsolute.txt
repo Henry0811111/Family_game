@@ -1,0 +1,12 @@
+C:\Users\battl\OneDrive\School\First_game\FamilyGames.Domain\bin\Debug\net10.0\FamilyGames.Domain.deps.json
+C:\Users\battl\OneDrive\School\First_game\FamilyGames.Domain\bin\Debug\net10.0\FamilyGames.Domain.dll
+C:\Users\battl\OneDrive\School\First_game\FamilyGames.Domain\bin\Debug\net10.0\FamilyGames.Domain.pdb
+C:\Users\battl\OneDrive\School\First_game\FamilyGames.Domain\obj\Debug\net10.0\FamilyGames.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\battl\OneDrive\School\First_game\FamilyGames.Domain\obj\Debug\net10.0\FamilyGames.Domain.AssemblyInfoInputs.cache
+C:\Users\battl\OneDrive\School\First_game\FamilyGames.Domain\obj\Debug\net10.0\FamilyGames.Domain.AssemblyInfo.cs
+C:\Users\battl\OneDrive\School\First_game\FamilyGames.Domain\obj\Debug\net10.0\FamilyGames.Domain.csproj.CoreCompileInputs.cache
+C:\Users\battl\OneDrive\School\First_game\FamilyGames.Domain\obj\Debug\net10.0\FamilyGames.Domain.sourcelink.json
+C:\Users\battl\OneDrive\School\First_game\FamilyGames.Domain\obj\Debug\net10.0\FamilyGames.Domain.dll
+C:\Users\battl\OneDrive\School\First_game\FamilyGames.Domain\obj\Debug\net10.0\refint\FamilyGames.Domain.dll
+C:\Users\battl\OneDrive\School\First_game\FamilyGames.Domain\obj\Debug\net10.0\FamilyGames.Domain.pdb
+C:\Users\battl\OneDrive\School\First_game\FamilyGames.Domain\obj\Debug\net10.0\ref\FamilyGames.Domain.dll
