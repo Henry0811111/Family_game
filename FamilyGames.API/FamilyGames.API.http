@@ -1,0 +1,6 @@
+@FamilyGames.API_HostAddress = http://localhost:5033
+
+GET {{FamilyGames.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

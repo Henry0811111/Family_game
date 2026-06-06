@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="FamilyGames.API/FamilyGames.API.csproj" />
+  <Project Path="FamilyGames.Application/FamilyGames.Application.csproj" />
+  <Project Path="FamilyGames.Client/FamilyGames.Client.csproj" />
+  <Project Path="FamilyGames.Domain/FamilyGames.Domain.csproj" />
+  <Project Path="FamilyGames.Infrastructure/FamilyGames.Infrastructure.csproj" />
+  <Project Path="FamilyGames.Tests/FamilyGames.Tests.csproj" />
+</Solution>
