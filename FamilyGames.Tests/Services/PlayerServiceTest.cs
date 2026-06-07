@@ -19,9 +19,9 @@ public class PlayerServiceTests
         _sut = new PlayerService(_playerRepo);
     }
 
-    // ═══════════════════════════════════════════════════════════
+    
     // Test 1 – Happy path: GetAll returnerar mappade DTOs
-    // ═══════════════════════════════════════════════════════════
+    
     [Fact]
     public async Task GetAllPlayersAsync_WhenPlayersExist_ReturnsMappedDtos()
     {
@@ -45,9 +45,9 @@ public class PlayerServiceTests
         result.First().TotalMatches.Should().Be(1);
     }
 
-    // ═══════════════════════════════════════════════════════════
+    
     // Test 2 – Happy path: Skapa spelare med giltig data
-    // ═══════════════════════════════════════════════════════════
+    
     [Fact]
     public async Task CreatePlayerAsync_WithValidData_ReturnsCreatedDto()
     {
@@ -65,9 +65,9 @@ public class PlayerServiceTests
             Arg.Is<Player>(p => p.Name == "Charlie"));
     }
 
-    // ═══════════════════════════════════════════════════════════
+    
     // Test 3 – Edge case: Tomt namn kastar ArgumentException
-    // ═══════════════════════════════════════════════════════════
+    
     [Fact]
     public async Task CreatePlayerAsync_WithEmptyName_ThrowsArgumentException()
     {
@@ -82,9 +82,9 @@ public class PlayerServiceTests
             .WithMessage("*name*");
     }
 
-    // ═══════════════════════════════════════════════════════════
+    
     // Test 4 – Validering: Ogiltig ålder kastar ArgumentException
-    // ═══════════════════════════════════════════════════════════
+    
     [Theory]
     [InlineData(0)]
     [InlineData(-5)]
@@ -102,9 +102,9 @@ public class PlayerServiceTests
             .WithMessage("*Age*");
     }
 
-    // ═══════════════════════════════════════════════════════════
+    
     // Test 5 – Happy path: Uppdatera befintlig spelare
-    // ═══════════════════════════════════════════════════════════
+    
     [Fact]
     public async Task UpdatePlayerAsync_WithValidId_ReturnsUpdatedDto()
     {
@@ -124,9 +124,9 @@ public class PlayerServiceTests
             Arg.Is<Player>(p => p.Name == "Nytt Namn"));
     }
 
-    // ═══════════════════════════════════════════════════════════
+    
     // Test 6 – Edge case: Uppdatera spelare som inte finns → null
-    // ═══════════════════════════════════════════════════════════
+    
     [Fact]
     public async Task UpdatePlayerAsync_WithNonExistentId_ReturnsNull()
     {
@@ -141,10 +141,9 @@ public class PlayerServiceTests
         result.Should().BeNull();
         await _playerRepo.DidNotReceive().UpdateAsync(Arg.Any<Player>());
     }
-
-    // ═══════════════════════════════════════════════════════════
+    
     // Test 7 – Happy path: Radera befintlig spelare → true
-    // ═══════════════════════════════════════════════════════════
+
     [Fact]
     public async Task DeletePlayerAsync_WithExistingId_ReturnsTrueAndDeletes()
     {
@@ -160,9 +159,9 @@ public class PlayerServiceTests
         await _playerRepo.Received(1).DeleteAsync(1);
     }
 
-    // ═══════════════════════════════════════════════════════════
+    
     // Test 8 – Edge case: Radera spelare som inte finns → false
-    // ═══════════════════════════════════════════════════════════
+    
     [Fact]
     public async Task DeletePlayerAsync_WithNonExistentId_ReturnsFalse()
     {

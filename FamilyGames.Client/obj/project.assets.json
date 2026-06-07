@@ -2092,11 +2092,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\battl\\OneDrive\\School\\First_game\\FamilyGames.Client\\FamilyGames.Client.csproj",
+      "projectUniqueName": "C:\\Users\\battl\\OneDrive\\New folder\\Family_game\\FamilyGames.Client\\FamilyGames.Client.csproj",
       "projectName": "FamilyGames.Client",
-      "projectPath": "C:\\Users\\battl\\OneDrive\\School\\First_game\\FamilyGames.Client\\FamilyGames.Client.csproj",
+      "projectPath": "C:\\Users\\battl\\OneDrive\\New folder\\Family_game\\FamilyGames.Client\\FamilyGames.Client.csproj",
       "packagesPath": "C:\\Users\\battl\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\battl\\OneDrive\\School\\First_game\\FamilyGames.Client\\obj\\",
+      "outputPath": "C:\\Users\\battl\\OneDrive\\New folder\\Family_game\\FamilyGames.Client\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

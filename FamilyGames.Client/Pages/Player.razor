@@ -1,0 +1,159 @@
+@page "/players"
+@inject HttpClient Http
+@using FamilyGames.Client.Models
+@using System.Net.Http.Json
+
+<PageTitle>Spelare</PageTitle>
+<h1 style="color:#6c63ff;font-weight:800;">👥 Spelare</h1>
+
+@* Felmeddelande – visas om API:et inte svarar *@
+@if (!string.IsNullOrEmpty(errorMessage))
+{
+    <div style="background:#ffebee;color:#c62828;padding:0.8rem 1rem;border-radius:8px;margin-bottom:1rem;font-weight:600;">
+        ⚠️ @errorMessage
+    </div>
+}
+
+@* Formulär för att lägga till / redigera spelare *@
+<div style="background:white;border-radius:16px;padding:1.5rem;box-shadow:0 4px 20px rgba(0,0,0,0.08);margin-bottom:1.5rem;">
+    <h5 style="font-weight:700;margin-bottom:1rem;">@(editingId.HasValue ? "✏️ Redigera" : "➕ Lägg till spelare")</h5>
+    <div style="display:flex;gap:0.8rem;flex-wrap:wrap;">
+        <input placeholder="Namn" @bind="formName"
+               style="padding:0.6rem 1rem;border-radius:8px;border:1px solid #ddd;flex:1;min-width:140px;" />
+        <input type="number" placeholder="Ålder" @bind="formAge"
+               style="padding:0.6rem 1rem;border-radius:8px;border:1px solid #ddd;width:90px;" />
+        <select @bind="formEmoji"
+                style="padding:0.6rem 1rem;border-radius:8px;border:1px solid #ddd;">
+            <option>🎮</option><option>🧒</option><option>👦</option>
+            <option>👧</option><option>👨</option><option>👩</option><option>🧓</option>
+        </select>
+        <button @onclick="SavePlayer"
+                style="background:#6c63ff;color:white;padding:0.6rem 1.4rem;border-radius:8px;border:none;font-weight:700;cursor:pointer;">
+            @(editingId.HasValue ? "Uppdatera" : "Spara")
+        </button>
+        @if (editingId.HasValue)
+        {
+            <button @onclick="CancelEdit"
+                    style="background:#eee;color:#333;padding:0.6rem 1rem;border-radius:8px;border:none;cursor:pointer;">
+                Avbryt
+            </button>
+        }
+    </div>
+</div>
+
+@* Spelarlista *@
+@if (players is null)
+{
+    <p>Laddar spelare...</p>
+}
+else if (!players.Any())
+{
+    <p style="color:#999;">Inga spelare än. Lägg till en ovan! 👆</p>
+}
+else
+{
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem;">
+        @foreach (var p in players)
+        {
+            <div style="background:white;border-radius:16px;padding:1.2rem;box-shadow:0 4px 20px rgba(0,0,0,0.08);">
+                <div style="display:flex;align-items:center;gap:1rem;margin-bottom:0.8rem;">
+                    <span style="font-size:2.5rem;">@p.AvatarEmoji</span>
+                    <div>
+                        <strong>@p.Name</strong><br/>
+                        <small style="color:#999;">Ålder @p.Age</small>
+                    </div>
+                </div>
+                <div style="margin-bottom:0.8rem;">
+                    <span style="background:#e8f5e9;color:#2e7d32;border-radius:20px;padding:2px 10px;font-size:0.8rem;">
+                        🏆 @p.Wins vinster
+                    </span>
+                    <span style="color:#999;font-size:0.85rem;margin-left:8px;">@p.TotalMatches matcher</span>
+                </div>
+                <div style="display:flex;gap:0.5rem;">
+                    <button @onclick="() => StartEdit(p)"
+                            style="flex:1;padding:0.5rem;border-radius:8px;border:1px solid #6c63ff;color:#6c63ff;background:white;cursor:pointer;">
+                        ✏️ Redigera
+                    </button>
+                    <button @onclick="() => DeletePlayer(p.Id)"
+                            style="padding:0.5rem 0.8rem;border-radius:8px;border:none;background:#ef5350;color:white;cursor:pointer;">
+                        🗑️
+                    </button>
+                </div>
+            </div>
+        }
+    </div>
+}
+
+@code {
+    private List<PlayerModel>? players;
+    private string errorMessage = string.Empty;
+    private string formName    = string.Empty;
+    private int    formAge     = 10;
+    private string formEmoji   = "🎮";
+    private int?   editingId;
+
+    protected override async Task OnInitializedAsync() => await LoadPlayers();
+
+    private async Task LoadPlayers()
+    {
+        try
+        {
+            players = await Http.GetFromJsonAsync<List<PlayerModel>>("api/players");
+            errorMessage = string.Empty;
+        }
+        catch
+        {
+            
+            errorMessage = "Kunde inte ladda spelare. Är API:et igång?";
+        }
+    }
+
+    private void StartEdit(PlayerModel p)
+    {
+        editingId = p.Id; formName = p.Name;
+        formAge   = p.Age; formEmoji = p.AvatarEmoji;
+    }
+
+    private void CancelEdit()
+    {
+        editingId = null; formName = string.Empty;
+        formAge   = 10;   formEmoji = "🎮";
+    }
+
+    private async Task SavePlayer()
+    {
+        if (string.IsNullOrWhiteSpace(formName))
+        {
+            errorMessage = "Namn krävs."; return;
+        }
+        try
+        {
+            var dto = new { Name = formName, Age = formAge, AvatarEmoji = formEmoji };
+            HttpResponseMessage response;
+
+            if (editingId.HasValue)
+                response = await Http.PutAsJsonAsync($"api/players/{editingId}", dto);
+            else
+                response = await Http.PostAsJsonAsync("api/players", dto);
+
+            if (!response.IsSuccessStatusCode)
+            {
+                errorMessage = await response.Content.ReadAsStringAsync();
+                return;
+            }
+            CancelEdit();
+            await LoadPlayers();
+        }
+        catch { errorMessage = "Misslyckades att spara. Är API:et igång?"; }
+    }
+
+    private async Task DeletePlayer(int id)
+    {
+        try
+        {
+            await Http.DeleteAsync($"api/players/{id}");
+            await LoadPlayers();
+        }
+        catch { errorMessage = "Kunde inte radera spelaren."; }
+    }
+}

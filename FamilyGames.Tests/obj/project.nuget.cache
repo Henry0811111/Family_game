@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PO6645PZeFU=",
+  "dgSpecHash": "tvEP42t/1UY=",
   "success": true,
-  "projectFilePath": "C:\\Users\\battl\\OneDrive\\School\\First_game\\FamilyGames.Tests\\FamilyGames.Tests.csproj",
+  "projectFilePath": "C:\\Users\\battl\\OneDrive\\New folder\\Family_game\\FamilyGames.Tests\\FamilyGames.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\battl\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\battl\\.nuget\\packages\\coverlet.collector\\6.0.4\\coverlet.collector.6.0.4.nupkg.sha512",

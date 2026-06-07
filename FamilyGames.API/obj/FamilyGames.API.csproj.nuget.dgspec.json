@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\battl\\OneDrive\\School\\First_game\\FamilyGames.API\\FamilyGames.API.csproj": {}
+    "C:\\Users\\battl\\OneDrive\\New folder\\Family_game\\FamilyGames.API\\FamilyGames.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\battl\\OneDrive\\School\\First_game\\FamilyGames.API\\FamilyGames.API.csproj": {
+    "C:\\Users\\battl\\OneDrive\\New folder\\Family_game\\FamilyGames.API\\FamilyGames.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\battl\\OneDrive\\School\\First_game\\FamilyGames.API\\FamilyGames.API.csproj",
+        "projectUniqueName": "C:\\Users\\battl\\OneDrive\\New folder\\Family_game\\FamilyGames.API\\FamilyGames.API.csproj",
         "projectName": "FamilyGames.API",
-        "projectPath": "C:\\Users\\battl\\OneDrive\\School\\First_game\\FamilyGames.API\\FamilyGames.API.csproj",
+        "projectPath": "C:\\Users\\battl\\OneDrive\\New folder\\Family_game\\FamilyGames.API\\FamilyGames.API.csproj",
         "packagesPath": "C:\\Users\\battl\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\battl\\OneDrive\\School\\First_game\\FamilyGames.API\\obj\\",
+        "outputPath": "C:\\Users\\battl\\OneDrive\\New folder\\Family_game\\FamilyGames.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,11 +33,11 @@
             "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\battl\\OneDrive\\School\\First_game\\FamilyGames.Application\\FamilyGames.Application.csproj": {
-                "projectPath": "C:\\Users\\battl\\OneDrive\\School\\First_game\\FamilyGames.Application\\FamilyGames.Application.csproj"
+              "C:\\Users\\battl\\OneDrive\\New folder\\Family_game\\FamilyGames.Application\\FamilyGames.Application.csproj": {
+                "projectPath": "C:\\Users\\battl\\OneDrive\\New folder\\Family_game\\FamilyGames.Application\\FamilyGames.Application.csproj"
               },
-              "C:\\Users\\battl\\OneDrive\\School\\First_game\\FamilyGames.Infrastructure\\FamilyGames.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\battl\\OneDrive\\School\\First_game\\FamilyGames.Infrastructure\\FamilyGames.Infrastructure.csproj"
+              "C:\\Users\\battl\\OneDrive\\New folder\\Family_game\\FamilyGames.Infrastructure\\FamilyGames.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\battl\\OneDrive\\New folder\\Family_game\\FamilyGames.Infrastructure\\FamilyGames.Infrastructure.csproj"
               }
             }
           }
@@ -511,14 +511,14 @@
         }
       }
     },
-    "C:\\Users\\battl\\OneDrive\\School\\First_game\\FamilyGames.Application\\FamilyGames.Application.csproj": {
+    "C:\\Users\\battl\\OneDrive\\New folder\\Family_game\\FamilyGames.Application\\FamilyGames.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\battl\\OneDrive\\School\\First_game\\FamilyGames.Application\\FamilyGames.Application.csproj",
+        "projectUniqueName": "C:\\Users\\battl\\OneDrive\\New folder\\Family_game\\FamilyGames.Application\\FamilyGames.Application.csproj",
         "projectName": "FamilyGames.Application",
-        "projectPath": "C:\\Users\\battl\\OneDrive\\School\\First_game\\FamilyGames.Application\\FamilyGames.Application.csproj",
+        "projectPath": "C:\\Users\\battl\\OneDrive\\New folder\\Family_game\\FamilyGames.Application\\FamilyGames.Application.csproj",
         "packagesPath": "C:\\Users\\battl\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\battl\\OneDrive\\School\\First_game\\FamilyGames.Application\\obj\\",
+        "outputPath": "C:\\Users\\battl\\OneDrive\\New folder\\Family_game\\FamilyGames.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -540,8 +540,8 @@
             "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\battl\\OneDrive\\School\\First_game\\FamilyGames.Domain\\FamilyGames.Domain.csproj": {
-                "projectPath": "C:\\Users\\battl\\OneDrive\\School\\First_game\\FamilyGames.Domain\\FamilyGames.Domain.csproj"
+              "C:\\Users\\battl\\OneDrive\\New folder\\Family_game\\FamilyGames.Domain\\FamilyGames.Domain.csproj": {
+                "projectPath": "C:\\Users\\battl\\OneDrive\\New folder\\Family_game\\FamilyGames.Domain\\FamilyGames.Domain.csproj"
               }
             }
           }
@@ -856,14 +856,14 @@
         }
       }
     },
-    "C:\\Users\\battl\\OneDrive\\School\\First_game\\FamilyGames.Domain\\FamilyGames.Domain.csproj": {
+    "C:\\Users\\battl\\OneDrive\\New folder\\Family_game\\FamilyGames.Domain\\FamilyGames.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\battl\\OneDrive\\School\\First_game\\FamilyGames.Domain\\FamilyGames.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\battl\\OneDrive\\New folder\\Family_game\\FamilyGames.Domain\\FamilyGames.Domain.csproj",
         "projectName": "FamilyGames.Domain",
-        "projectPath": "C:\\Users\\battl\\OneDrive\\School\\First_game\\FamilyGames.Domain\\FamilyGames.Domain.csproj",
+        "projectPath": "C:\\Users\\battl\\OneDrive\\New folder\\Family_game\\FamilyGames.Domain\\FamilyGames.Domain.csproj",
         "packagesPath": "C:\\Users\\battl\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\battl\\OneDrive\\School\\First_game\\FamilyGames.Domain\\obj\\",
+        "outputPath": "C:\\Users\\battl\\OneDrive\\New folder\\Family_game\\FamilyGames.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1197,14 +1197,14 @@
         }
       }
     },
-    "C:\\Users\\battl\\OneDrive\\School\\First_game\\FamilyGames.Infrastructure\\FamilyGames.Infrastructure.csproj": {
+    "C:\\Users\\battl\\OneDrive\\New folder\\Family_game\\FamilyGames.Infrastructure\\FamilyGames.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\battl\\OneDrive\\School\\First_game\\FamilyGames.Infrastructure\\FamilyGames.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\battl\\OneDrive\\New folder\\Family_game\\FamilyGames.Infrastructure\\FamilyGames.Infrastructure.csproj",
         "projectName": "FamilyGames.Infrastructure",
-        "projectPath": "C:\\Users\\battl\\OneDrive\\School\\First_game\\FamilyGames.Infrastructure\\FamilyGames.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\battl\\OneDrive\\New folder\\Family_game\\FamilyGames.Infrastructure\\FamilyGames.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\battl\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\battl\\OneDrive\\School\\First_game\\FamilyGames.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\battl\\OneDrive\\New folder\\Family_game\\FamilyGames.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1226,8 +1226,8 @@
             "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\battl\\OneDrive\\School\\First_game\\FamilyGames.Application\\FamilyGames.Application.csproj": {
-                "projectPath": "C:\\Users\\battl\\OneDrive\\School\\First_game\\FamilyGames.Application\\FamilyGames.Application.csproj"
+              "C:\\Users\\battl\\OneDrive\\New folder\\Family_game\\FamilyGames.Application\\FamilyGames.Application.csproj": {
+                "projectPath": "C:\\Users\\battl\\OneDrive\\New folder\\Family_game\\FamilyGames.Application\\FamilyGames.Application.csproj"
               }
             }
           }

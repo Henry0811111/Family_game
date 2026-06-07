@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\battl\\OneDrive\\School\\First_game\\FamilyGames.Domain\\FamilyGames.Domain.csproj": {}
+    "C:\\Users\\battl\\OneDrive\\New folder\\Family_game\\FamilyGames.Domain\\FamilyGames.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\battl\\OneDrive\\School\\First_game\\FamilyGames.Domain\\FamilyGames.Domain.csproj": {
+    "C:\\Users\\battl\\OneDrive\\New folder\\Family_game\\FamilyGames.Domain\\FamilyGames.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\battl\\OneDrive\\School\\First_game\\FamilyGames.Domain\\FamilyGames.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\battl\\OneDrive\\New folder\\Family_game\\FamilyGames.Domain\\FamilyGames.Domain.csproj",
         "projectName": "FamilyGames.Domain",
-        "projectPath": "C:\\Users\\battl\\OneDrive\\School\\First_game\\FamilyGames.Domain\\FamilyGames.Domain.csproj",
+        "projectPath": "C:\\Users\\battl\\OneDrive\\New folder\\Family_game\\FamilyGames.Domain\\FamilyGames.Domain.csproj",
         "packagesPath": "C:\\Users\\battl\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\battl\\OneDrive\\School\\First_game\\FamilyGames.Domain\\obj\\",
+        "outputPath": "C:\\Users\\battl\\OneDrive\\New folder\\Family_game\\FamilyGames.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

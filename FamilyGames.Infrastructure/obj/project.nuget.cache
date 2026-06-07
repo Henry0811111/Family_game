@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iYA1kZgkdmo=",
+  "dgSpecHash": "Qwc39Pc1bhE=",
   "success": true,
-  "projectFilePath": "C:\\Users\\battl\\OneDrive\\School\\First_game\\FamilyGames.Infrastructure\\FamilyGames.Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\battl\\OneDrive\\New folder\\Family_game\\FamilyGames.Infrastructure\\FamilyGames.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\battl\\.nuget\\packages\\azure.core\\1.47.1\\azure.core.1.47.1.nupkg.sha512",
     "C:\\Users\\battl\\.nuget\\packages\\azure.identity\\1.14.2\\azure.identity.1.14.2.nupkg.sha512",

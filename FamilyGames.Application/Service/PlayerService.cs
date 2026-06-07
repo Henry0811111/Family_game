@@ -9,7 +9,7 @@ public class PlayerService : IPlayerService
 {
     private readonly IPlayerRepository _playerRepository;
 
-    // IPlayerRepository injiceras – inte den konkreta klassen
+    
     public PlayerService(IPlayerRepository playerRepository)
     {
         _playerRepository = playerRepository;
@@ -29,7 +29,7 @@ public class PlayerService : IPlayerService
 
     public async Task<PlayerDto> CreatePlayerAsync(CreatePlayerDto dto)
     {
-        // Validering – kastas som exception, fångas i controllern
+        
         if (string.IsNullOrWhiteSpace(dto.Name))
             throw new ArgumentException("Player name cannot be empty.");
 
@@ -71,8 +71,6 @@ public class PlayerService : IPlayerService
         await _playerRepository.DeleteAsync(id);
         return true;
     }
-
-    // Privat hjälpmetod – mappar Entity → DTO
     private static PlayerDto MapToDto(Player p) => new()
     {
         Id = p.Id,
